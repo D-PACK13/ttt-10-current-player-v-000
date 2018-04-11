@@ -10,15 +10,14 @@ def turn_count(board)
 end
 
 def current_player(board)
-  if turn_count == " " 
-    puts "X"
-  elseif  
-    turn_count.even?
-    puts "O"
-  else
-    puts "X"
-  end
-end
+  if turn_count(board) % == 0
+    num = turn_count(board)
+    if num % 2 == 0
+      return "X"
+    else
+      return "O"
+    end
+ 
 
 
 
